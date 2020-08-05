@@ -1,11 +1,10 @@
 const express = require('express')
 const app = express()
 
-app.get('/', function(req, res) {
-    res.send('This is working')
-});
+app.get('/', (req, res) => {
+    res.send('Home Route')
+})
 
-
-app.listen('8000', () => {
-    console.log('app is up and running on 8000')
+app.listen(8000, () => {
+    console.log('Server up and running on port 8000')
 })
